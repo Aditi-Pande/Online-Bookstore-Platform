@@ -4,6 +4,7 @@ from flask_login import current_user
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField 
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from BookStore.models import User,Admin,Book
+from wtforms import IntegerField
 
 
 class RegistrationForm(FlaskForm):
@@ -86,14 +87,15 @@ class AddBookForm(FlaskForm):
         isbn = Book.query.filter_by(ISBN=ISBN.data).first()
         if isbn:
             raise ValidationError('That ISBN Book is already in Store.') 
-            
+        
+
 class UpdateBookForm(FlaskForm):
-    title = StringField('Title',validators=[DataRequired()])
-    author = StringField('Author',validators=[DataRequired()])
-    publication = StringField('Publication',validators=[DataRequired()])
-    ISBN = StringField('ISBN',validators=[DataRequired()]) 
-    content = TextAreaField ('Content',validators=[DataRequired()])
-    price = StringField('Price',validators=[DataRequired()])
-    piece = StringField('Piece',validators=[DataRequired()])
+    title = StringField('Title', validators=[DataRequired()])
+    author = StringField('Author', validators=[DataRequired()])
+    publication = StringField('Publication', validators=[DataRequired()])
+    ISBN = StringField('ISBN', validators=[DataRequired()]) 
+    content = TextAreaField('Content', validators=[DataRequired()])
+    price = IntegerField('Price', validators=[DataRequired()])
+    piece = IntegerField('Piece', validators=[DataRequired()])
     picture = FileField('Add Book Picture', validators=[FileAllowed(['jpg', 'png'])])
-    submit = SubmitField('Update Book')            
+    submit = SubmitField('Update Book')

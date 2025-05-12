@@ -1,23 +1,25 @@
 body {
-  background: #fafafa;
-  color: #333333;
+  background: #f4f6f8;
+  color: #212121;
   margin-top: 5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a.social-icon{
-	color:#333333; !important
+a.social-icon {
+  color: #2c3e50 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #2c3e50;
 }
 
 .bg-blue {
-  background-color: #338ff3;
+  background-color: #616161;
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #e0eaf3;
+  transition: color 0.3s;
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -25,23 +27,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header .navbar-nav .nav-link.active {
-  font-weight: 500;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .content-section {
   background: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 6px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .article-title {
-  color: #444444;
+  color: #2c3e50;
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #2980b9;
   text-decoration: none;
 }
 
@@ -53,16 +57,17 @@ a.article-title:hover {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+  border-radius: 4px;
 }
 
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
-  color: #333;
+  color: #2c3e50;
   text-decoration: none;
 }
 
@@ -77,93 +82,98 @@ a.article-title:hover {
   width: 125px;
   margin-right: 20px;
   margin-bottom: 16px;
+  border-radius: 6px;
 }
 
 .account-heading {
   font-size: 2.5rem;
+  color: #34495e;
 }
 
-.book-img{
-	margin-right: 16px;
+.book-img {
+  margin-right: 16px;
 }
 
-.book-title{
-	color: #338ff3;
+.book-title {
+  color: #4a90e2;
 }
 
-.checkout{
-	display:flex; 
-	justify-content:flex-end; 
-	width:100%; 
-	padding:0;
+.checkout {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0;
 }
 
-.mode{
-	float:right;
-	text-align:right;
-	margin-left: 460px;
+.mode {
+  float: right;
+  text-align: right;
+  margin-left: 460px;
 }
 
 .invoice-box {
-    max-width: 800px;
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #eee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-    color: #555;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  color: #555;
+  background: #fff;
+  border-radius: 8px;
 }
-    
+
 .invoice-box table {
-	width: 100%;
-    line-height: inherit;
-    text-align: left;    
+  width: 100%;
+  line-height: inherit;
+  text-align: left;
 }
-    
+
 .invoice-box table td {
-    padding: 5px;
-    vertical-align: top;
+  padding: 5px;
+  vertical-align: top;
 }
 
 .invoice-box table tr td:nth-child(2) {
-    text-align: right;
+  text-align: right;
 }
- 
+
 .invoice-box table tr.top table td {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-    
+
 .invoice-box table tr.top table td.title {
-    font-size: 45px;
-    line-height: 45px;
-	color: #333;
+  font-size: 45px;
+  line-height: 45px;
+  color: #2c3e50;
 }
-    
+
 .invoice-box table tr.information table td {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
-    
+
 .invoice-box table tr.heading td {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
+  background: #ecf0f1;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
-    
+
 .invoice-box table tr.details td {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-    
-.invoice-box table tr.item td{
-    border-bottom: 1px solid #eee;
+
+.invoice-box table tr.item td {
+  border-bottom: 1px solid #eee;
 }
-    
+
 .invoice-box table tr.item.last td {
-    border-bottom: none;
+  border-bottom: none;
 }
-    
+
 .invoice-box table tr.total td:nth-child(2) {
-    border-top: 2px solid #eee;
-    font-weight: bold;
+  border-top: 2px solid #eee;
+  font-weight: bold;
+  color: #2c3e50;
 }
